@@ -1,0 +1,48 @@
+stats
+add A Lincoln	abe
+add A Blinken	anthony
+add B Safe	safety
+add C Language		Crocks
+stats
+friend abe anthony
+size abe
+add A Lincoln	honest
+add A Lincoln	abolitionist
+friend honest abe
+friend abe honest
+friend abe abolitionist
+stats
+print abe
+print safety
+add FORTH Language	rpn
+add ML	Language	functional
+add LISP Language	parens!
+add Erlang Language	concurrent
+add Haskell	Language	functional
+print Haskell
+friend concurrent functional	
+friend safety abe
+add Haskell	Language	monadic
+friend safety anthony
+friend safety Crocks
+friend safety rpn
+friend safety functional
+friend safety concurrent
+unfriend abe safety
+print safety
+friend monadic anthony
+friend monadic Crocks
+friend monadic rpn
+friend monadic functional
+friend monadic concurrent
+stats
+unfriend safety anthony
+unfriend safety Crocks
+unfriend safety rpn
+unfriend safety functional
+unfriend safety concurrent
+unfriend abe Crocks
+stats
+init
+stats
+quit

@@ -1,0 +1,57 @@
+$ ./amici
+amici> add
+error: add command usage: first_name last_name handle
+amici> 
+amici> nonsense
+amici> add John Smith smitty
+amici> print
+error: print command usage: print handle
+amici> print smitty
+User John Smith ('smitty') has no friends
+amici> size
+error: size command usage: size handle
+amici> size smitty
+User John Smith ('smitty') has no friends
+amici> stats
+Statistics:  1 person, 0 friendships
+amici> add Spike    Jones
+error: add command usage: first_name last_name handle
+amici> add Spike   Jones  oney
+amici> friend smitty jonesy
+error: 'jonesy' is not a known handle
+amici> friend oney smitty
+oney and smitty are now friends
+amici> stats
+Statistics:  2 people, 1 friendship
+amici> size oney
+User Spike Jones ('oney') has 1 friend
+amici> size smitty
+User John Smith ('smitty') has 1 friend
+amici> add John Smith smitty
+error: handle 'smitty' is already taken.  Try another handle.
+amici> add John Smith jonboy
+amici> friend jonboy smitty
+jonboy and smitty are now friends
+amici> stats
+Statistics:  3 people, 2 friendships
+amici> size jonboy
+User John Smith ('jonboy') has 1 friend
+amici> size smitty
+User John Smith ('smitty') has 2 friends
+amici> print smitty
+User John Smith ('smitty') has 2 friends
+	Spike Jones ('oney')
+	John Smith ('jonboy')
+amici> print oney
+User Spike Jones ('oney') has 1 friend
+	John Smith ('smitty')
+amici> add Mary Barry baker
+amici> print baker
+User Mary Barry ('baker') has no friends
+amici> stats
+Statistics:  4 people, 2 friendships
+amici> init
+system re-initialized
+amici> print baker
+error: 'baker' is not a known handle
+amici> quit

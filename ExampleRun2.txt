@@ -1,0 +1,51 @@
+
+# output of program given input redirected from File-input2 file
+
+$ ./amici <File-input2
+amici> Statistics:  0 people, 0 friendships
+amici> amici> amici> amici> amici> Statistics:  4 people, 0 friendships
+amici> abe and anthony are now friends
+amici> User A Lincoln ('abe') has 1 friend
+amici> amici> amici> honest and abe are now friends
+error: 'abe' and 'honest' are already friends.
+amici> amici> abe and abolitionist are now friends
+amici> Statistics:  6 people, 3 friendships
+amici> User A Lincoln ('abe') has 3 friends
+	A Blinken ('anthony')
+	A Lincoln ('honest')
+	A Lincoln ('abolitionist')
+amici> User B Safe ('safety') has no friends
+error: handle 'functional' is already taken.  Try another handle.
+error: 'Haskell' is not a known handle
+amici> amici> amici> amici> amici> amici> amici> concurrent and functional are now friends
+amici> safety and abe are now friends
+amici> amici> safety and anthony are now friends
+amici> safety and Crocks are now friends
+amici> safety and rpn are now friends
+amici> safety and functional are now friends
+amici> safety and concurrent are now friends
+amici> abe and safety are no longer friends
+amici> User B Safe ('safety') has 5 friends
+	A Blinken ('anthony')
+	C Language ('Crocks')
+	FORTH Language ('rpn')
+	ML Language ('functional')
+	Erlang Language ('concurrent')
+amici> monadic and anthony are now friends
+amici> monadic and Crocks are now friends
+amici> monadic and rpn are now friends
+amici> monadic and functional are now friends
+amici> monadic and concurrent are now friends
+amici> Statistics:  11 people, 14 friendships
+amici> safety and anthony are no longer friends
+amici> safety and Crocks are no longer friends
+amici> safety and rpn are no longer friends
+amici> safety and functional are no longer friends
+amici> safety and concurrent are no longer friends
+error: 'abe' and 'Crocks' are not friends.
+amici> amici> Statistics:  11 people, 9 friendships
+amici> system re-initialized
+amici> Statistics:  0 people, 0 friendships
+amici> 
+$
+

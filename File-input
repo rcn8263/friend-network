@@ -1,0 +1,14 @@
+add
+add John Smith, smitty
+add Edith Smith, smitty
+add Mr Ed, horse
+friend
+friend smitty horse
+unfriend
+print
+size
+stats
+init
+nonsense command is ignored
+stats
+quit
